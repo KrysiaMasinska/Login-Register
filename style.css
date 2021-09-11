@@ -118,3 +118,66 @@ span {
 #register {
     left: 450px;
 }
+
+@media(max-width: 576px) {
+    .form__box {
+        width: 280px;
+        height: 460px;
+    }
+
+    .form__button {
+        width: 160px;
+    }
+
+    .form__toggle-btn {
+        padding: 10px 17px;
+    }
+
+    #btn {
+        width: 80px;
+    }
+
+    .form__socialMedia {
+        margin: 20px auto;
+    }
+
+    .form__socialMedia i {
+        margin: 0 12px;
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .input__group {
+        top: 160px;
+        width: 180px;
+    }
+
+    .input__field {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+    }
+
+    .submit__btn {
+        padding: 10px 30px;
+        width: 85%;
+    }
+
+    .input__check {
+        margin: 30px 10px 30px 0;
+    }
+
+    span {
+        font-size: 12px;
+        bottom: 65px;
+    }
+
+    #login {
+        left: 50px;
+    }
+
+    #register {
+        left: 450px;
+    }
+
+}

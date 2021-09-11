@@ -28,7 +28,7 @@
             <form id="login" class="input__group">
                 <input type="text" class="input__field" placeholder="User Id">
                 <input type="password" class="input__field" placeholder="Password">
-                <input type="checkbox" class="input__check"><span>Remmber me</span>
+                <input type="checkbox" class="input__check"><span>Remember me</span>
                 <button type="submit" class="submit__btn">Login</button>
             </form>
             <form id="register" class="input__group">
@@ -47,18 +47,23 @@
         const registerId = document.getElementById('register');
         const btn = document.getElementById('btn');
 
-        function register(){
+        function register() {
             loginId.style.left = "-400px";
             registerId.style.left = "50px";
-            btn.style.left = "110px";
+
+            if (window.matchMedia('( max-width: 576px )').matches) {
+                btn.style.left = "80px";
+            } else {
+                btn.style.left = "110px";
+            }
+
         }
 
-        function login(){
+        function login() {
             loginId.style.left = "50px";
             registerId.style.left = "450px";
             btn.style.left = "0";
         }
-
     </script>
 </body>
 
